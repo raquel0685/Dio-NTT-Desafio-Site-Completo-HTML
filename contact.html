@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Veterinário Pets 'R' Family: Contato</title>
+    <style>
+        header img {
+            box-shadow: 11px 7px 14px 1px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 11px 7px 14px 1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 11px 7px 14px 1px rgba(0, 0, 0, 0.75);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        nav li,
+        footer li {
+            list-style-type: none;
+        }
+
+        .observacao {
+            color: rgb(277, 0, 0);
+            text-transform: uppercase;
+        }
+
+        span {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        form{
+            margin-top: 5px;
+        }
+        fieldset{
+            margin: 5px 0;
+        }
+        legend{
+            margin-bottom: 5px;
+        }
+        select {
+            margin: 5px 0;
+        }
+        #adicional{
+            margin-top: 10px;
+        }
+        footer{
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Hospital Veterinário Pets 'R' Family</h1>
+            <img src="./assets/img/nav-contato-img.jpg" alt="Foto de vários animais domésticos.">
+            <nav>
+                <ul>
+                    <li><a href="./index.html" target="_blank">Página Principal</a></li>
+                    <li><a href="./about.html" target="_blank">Sobre Nós</a></li>
+                    <li><a href="./hours.html" target="_blank">Fucionamento</a></li>
+                    <li><a href="./contact.html" target="_self">Entre em Contato Conosco!</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <section>
+                <h2>Estamos sempre à disposição!</h2>
+                <p>Prezamos pela <span>excelência</span> em nosso atendimento, portanto entre em contato caso deseje
+                    esclarecer dúvidas, tenha alguma sugestão ou reclamação ou para nos prestar um elogio!</p>
+                <p class="observacao"><i><u>Em caso de emergências/urgências, ligue para nós! O tempo médio para
+                            retorno pelo formulário são 2 dias úteis.</u></i></p>
+            </section>
+        </div>
+        <div>
+            <section>
+                <form autocomplete="off" target="_self" onsubmit="alert('Agradecemos pelo contato! Retornaremos em breve!')">
+                    <fieldset>
+                        <legend>Dados Pessoais:</legend>
+
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" required>
+
+                        <label for="date">Data de Nascimento:</label>
+                        <input type="date" id="date" min="1910-01-01" max="2010-01-01">
+
+                        <label for="date">Data da Última Visita:</label>
+                        <input type="date" id="date" min="1997-06-01">
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço:</legend>
+
+                        <label for="cep">Cep</label>
+                        <input type="text" id="cep">
+
+                        <label for="endereco">Rua/Número:</label>
+                        <input type="text" id="endereco" required>
+
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" required>
+
+                        <label for="localidade">Localidade:</label>
+                        <input type="text" id="localidade" required>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações de contato:</legend>
+
+                        <label for="tel">Celular:</label>
+                        <input type="tel" id="tel" required>
+
+                        <h4>Possui WhatsApp neste número?</h4>
+                        <input type="radio" name="borda" value="sim">Sim<br>
+                        <input type="radio" name="borda" value="nao">Não<br>
+
+                        <label for="adicional">Telefone adicional:</label>
+                        <input type="tel" id="adicional">
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+
+                        <h4>Como deseja receber o feedback?</h4>
+
+                        <select name="select" id="select">
+                            <option value="selecione" selected>--Selecione uma opção--</option>
+                            <option value="WhatsApp">WhatsApp<br></option>
+                            <option value="telefone">Telefone<br></option>
+                            <option value="email">E-mail</option>
+                        </select>
+
+                        <h4>Melhor horário para contato:</h4>
+                        <input type="checkbox" name="opcional[]" value="WhatsApp">Manhã<br>
+                        <input type="checkbox" name="opcional[]" value="telefone">Tarde<br>
+                        <input type="checkbox" name="opcional[]" value="email">Noite
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mensagem</legend>
+
+                        <select name="select" id="select">
+                            <option value="selecione" selected>--Motivo da mensagem--</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select><br>
+
+                        <label for="mensagem">Digite sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#"><img src="./assets/img/footer-call.png" alt="Imagem para ligar." width="50"></a></li>
+                <li><a href="#"><img src="./assets/img/footer-whatsapp.png" alt="Logo do WhatsApp." width="50"></a></li>
+                <li><a href="#"><img src="./assets/img/footer-facebook.png" alt="Logo do Facebook." width="50"></a></li>
+                <li><a href="#"><img src="./assets/img/footer-insta.png" alt="Logo do Instagram." width="50"></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>&copy 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
